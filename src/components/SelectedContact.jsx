@@ -40,6 +40,10 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
                 <td>Phone:</td>
                 <td>{contact.phone}</td>
               </tr>
+              <tr>
+                <td>Id:</td>
+                <td>{contact.id}</td>
+              </tr>
             </tbody>
           </table>
         ) : (

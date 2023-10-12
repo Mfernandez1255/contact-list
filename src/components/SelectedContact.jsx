@@ -18,6 +18,9 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
     fetchSelectedContact();
    }, [selectedContactId])
 
+   const goBackToContactList = () => {
+    setSelectedContactId(null); 
+  };
 
     return(
         <div>
@@ -42,6 +45,7 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
         ) : (
           <div>Loading...</div>
         )}
+        <button onClick={goBackToContactList}>Back to Contact List</button>
       </div>
     );
   }
